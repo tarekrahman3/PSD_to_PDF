@@ -7,4 +7,4 @@ print(files)
 for file_name in files:
 	print('converting ',file_name)
 	psd = PSDImage.open(file_name)
-	psd.composite().save(f'{file_name.replace('.psd','')}.pdf')
+	psd.composite().save(f"{file_name.replace('.psd','')}.pdf")
