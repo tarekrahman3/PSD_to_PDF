@@ -5,5 +5,4 @@ files = os.listdir('./')
 for index, file_name in enumerate(files):
 	if '.psd' in file_name:
 		print(f'converting {index} ',file_name)
-		psd = PSDImage.open(file_name)
-		psd.composite().save(f"{file_name.replace('.psd','')}.pdf")
+		PSDImage.open(file_name).composite().save(f"{file_name.replace('.psd','')}.pdf")
